@@ -20,12 +20,15 @@ public class Troco {
 			int troco10 = 0;
 			int troco5 = 0;
 			int troco2 = 0;
+			int troco1 = 0;
 			float resto100 = 0;
 			float resto50 = 0;
 			float resto20 = 0;
 			float resto10 = 0;
 			float resto5 = 0;
 			float resto2 = 0;
+			float resto1 = 0;
+			
 
 			troco100 = (int) troco / 100;
 			resto100 = troco % 100;
@@ -51,6 +54,10 @@ public class Troco {
 			resto2 = resto5 % 2;
 			qtdeDois = troco2;
 			
+			troco1 = (int) resto2 / 1;
+			resto1 = resto2 % 1;
+			qtdeUm = troco1;
+			
 		}
 		
 		public int qtdeCem() {
@@ -75,6 +82,10 @@ public class Troco {
 		
 		public int qtdeDois(){
 			return qtdeDois;
+		}
+		
+		public int qtdeUm(){
+			return qtdeUm;
 		}
 	}
 

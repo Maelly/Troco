@@ -57,5 +57,17 @@ public class TrocoTeste {
 			assertEquals(0, t.qtdeCinquenta());
 			assertEquals(0, t.qtdeCem());
 		}
+		
+		@Test
+		public void testTroco1(){
+			Troco t = new Troco(32, 33);
+			assertEquals(1, t.qtdeUm());
+			assertEquals(0, t.qtdeDois());
+			assertEquals(0, t.qtdeCinco());
+			assertEquals(0, t.qtdeDez());
+			assertEquals(0, t.qtdeVinte());
+			assertEquals(0, t.qtdeCinquenta());
+			assertEquals(0, t.qtdeCem());
+		}
 	}
 
